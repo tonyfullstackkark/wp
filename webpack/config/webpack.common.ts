@@ -2,7 +2,7 @@
 import { Configuration } from 'webpack';
 
 // Constants
-import { SRC_DIR, BUILD_DIR } from '../utils/constants';
+import { SRC_DIR, BUILD_DIR, DIST_DIR } from '../utils/constants';
 
 // Common Configuration
 export default () => {
@@ -13,7 +13,7 @@ export default () => {
     },
     output: {
       filename: '[name].js',
-      path: BUILD_DIR,
+      path: DIST_DIR,
     },
   };
 
